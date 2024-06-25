@@ -1,0 +1,18 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+.faq-area {
+  background-color: var(--section-bg-color);
+}
+.faq-head {
+  display: flex;
+  justify-content: center;
+}
+.faq-img {
+  text-align: right;
+}
+.faq-img img {
+  width: min(100%, 500px);
+  border-radius: 40px 0px 40px;
+}

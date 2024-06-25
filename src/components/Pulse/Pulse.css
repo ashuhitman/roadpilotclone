@@ -1,0 +1,28 @@
+.pulse {
+  position: relative;
+  background-color: var(--btn-bg-color);
+  height: min(40%, 200px);
+  width: min(40%, 200px);
+  border-radius: 50%;
+}
+.pulse span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+  opacity: 0.8;
+  animation: pulseOut 4s ease-out infinite;
+}
+.pulse span:nth-child(2) {
+  animation-delay: -2s;
+}
+.pulse span:last-child {
+  animation-delay: -3s;
+}
+@keyframes pulseOut {
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}

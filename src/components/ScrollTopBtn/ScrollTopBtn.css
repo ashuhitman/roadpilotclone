@@ -1,0 +1,31 @@
+.scroll-top {
+  display: none;
+  position: fixed;
+  background-color: var(--btn-bg-color);
+  right: 1rem;
+  bottom: 30px;
+  height: 44px;
+  width: 44px;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 0 15px;
+  color: white;
+  animation: scrolltopanimation 5s linear infinite;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.scroll-top.show {
+  display: flex;
+}
+@keyframes scrolltopanimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  10% {
+  }
+}

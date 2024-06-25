@@ -1,0 +1,32 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+  .bottom-footer li {
+    font-size: 1.2rem;
+  }
+}
+.bottom-footer > div {
+  margin: 15px;
+}
+.bottom-footer {
+  padding-block: 15px;
+  background-color: var(--bottom-footer);
+  color: white;
+  text-align: center;
+}
+
+.bottom-footer ul {
+  display: flex;
+
+  align-items: center;
+  list-style-type: circle;
+
+  font-size: 0.8rem;
+}
+.bottom-footer li {
+  margin-left: 30px;
+}

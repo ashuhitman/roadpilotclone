@@ -1,0 +1,15 @@
+.exp-card {
+  border-radius: 40px 0px 40px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 40px 30px 40px 30px;
+  text-align: center;
+  transition: 0.5s linear;
+  margin: 20px;
+  white-space: nowrap; /* Prevents wrapping */
+  word-break: keep-all; /* Prevents word breaking */
+  overflow-wrap: normal; /* Ensures long words don't break */
+}
+.exp-card:hover {
+  border: 2px solid var(--btn-bg-color) !important;
+  transform: translateY(-6px);
+}

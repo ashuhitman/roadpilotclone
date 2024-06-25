@@ -1,0 +1,24 @@
+.fixed-header {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-color);
+
+  box-shadow: rgba(9, 9, 9, 0.05) 0px 1px 0px;
+  border-bottom: 1px solid #ffffff14;
+  animation: slide-down 0.9s;
+}
+
+.hide {
+  display: none;
+}
+@keyframes slide-down {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0px;
+  }
+}

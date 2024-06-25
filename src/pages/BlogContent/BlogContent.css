@@ -1,0 +1,105 @@
+.blog-box {
+  display: flex;
+  text-wrap: wrap;
+  gap: 3rem;
+}
+
+.left {
+  flex: 2;
+  margin-block: 20px;
+  border-radius: 2.5rem 0px 2.5rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.left-head {
+  overflow: hidden;
+}
+.left-head img {
+  width: 100%;
+}
+.left-body > h3 {
+  margin: 2rem;
+}
+.left-body > p {
+  margin-inline: 2rem;
+}
+.left-head .icon {
+  margin: 2rem 1rem 2rem 2rem;
+}
+
+.left-foot {
+  margin: 2rem;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.left-foot a {
+  border: 1px solid #eecc31;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* right section */
+.right {
+  flex: 1;
+  background-color: var(--section-bg-color);
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  overflow-y: auto;
+  border-radius: 2.5rem 0px 2.5rem;
+}
+
+.list {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 2rem;
+  padding-block: 1.4rem;
+  border-bottom: 1px dotted gray;
+}
+.list:last-child {
+  border: none;
+}
+
+.right-img img {
+  width: 90px;
+  height: auto;
+  border-radius: 10px 0px 10px;
+}
+.right-img {
+  margin-right: 10px;
+}
+.right-img button {
+  border: none;
+  background-color: inherit;
+  transition: 0.3s linear;
+  overflow: hidden;
+}
+
+.right-text {
+  color: var(--text-color);
+  flex: 1;
+}
+.right-text h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.right-text p {
+  margin: 0;
+  color: #888;
+}
+
+@media only screen and (max-width: 992px) {
+  .blog-box {
+    display: block;
+  }
+}

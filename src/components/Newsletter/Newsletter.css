@@ -1,0 +1,26 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .newsletter-area {
+    display: flex;
+    gap: 20px;
+  }
+  .newsletter-area__left {
+    width: 70%;
+    padding-inline: 4rem;
+  }
+  .newsletter-area__right {
+    margin: 2rem 1.5rem;
+  }
+}
+.newsletter-area > div {
+}
+.newsletter-area__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 1.5rem;
+}
+.newsletter-area__right > figure {
+  border-radius: 40px 0px 40px;
+  overflow: hidden;
+}

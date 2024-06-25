@@ -1,0 +1,27 @@
+.form-container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+.input-group {
+  margin: 15px;
+}
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 15px 20px;
+  outline: none;
+}
+.input-group:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+.input-group button {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 15px 0px 15px;
+}
+.input-group:last-child {
+  text-align: center;
+}

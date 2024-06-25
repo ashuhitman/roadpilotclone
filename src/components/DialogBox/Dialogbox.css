@@ -1,0 +1,60 @@
+.dialog-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 200;
+}
+
+.dialog-box.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.dialog-box.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dialog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.dialog-content {
+  width: min(560px, 90%);
+  height: 350px;
+  position: relative;
+  z-index: 200;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Disable scrolling on body when no-scroll class is applied */
+body.no-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,37 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .exp-card-container {
+    display: flex;
+    gap: 40px;
+    padding: 2rem;
+  }
+
+  .exp-card-container > div:nth-child(odd) {
+    position: relative;
+    top: -10px;
+  }
+  .exp-card-container > div:nth-child(even) {
+    position: relative;
+    top: 10px;
+  }
+  .exp-card-container > div {
+    flex: 1;
+  }
+}
+.exp-header {
+  display: flex;
+  justify-content: center;
+}
+
+.experience-area {
+  background-color: var(--section-bg-color);
+}
+
+.exp-card-container > div:nth-child(odd) {
+  background-color: var(--card-color-odd);
+  border: 2px solid var(--card-border-color);
+}
+.exp-card-container > div:nth-child(even) {
+  background-color: var(--card-color-even);
+  border: 2px solid var(--card-border-color);
+}

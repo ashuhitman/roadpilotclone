@@ -1,0 +1,20 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .plan-card-container {
+    display: flex;
+    gap: 20px;
+  }
+  .plan-card-container > * {
+    flex: 1;
+  }
+}
+.plan-head {
+  display: flex;
+  justify-content: center;
+}
+.plan-card-container > div:nth-child(2) {
+  height: fit-content;
+}
+.plan-card-container > div {
+  margin-block: 20px;
+}

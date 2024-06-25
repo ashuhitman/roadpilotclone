@@ -1,0 +1,101 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .top-footer {
+    display: flex;
+  }
+  .top-footer__contact {
+    width: 35%;
+  }
+  .top-footer__company__links {
+    flex: 1;
+  }
+  .top-footer__links {
+    flex: 1;
+  }
+  .top_footer__newsletter {
+    width: 30%;
+  }
+}
+.top-footer {
+  background-color: var(--top-footer);
+  color: var(--footer-text-color);
+  padding-block: 25px !important;
+}
+.top-footer .heading {
+  padding-bottom: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* contact section */
+.top-footer__contact li {
+  margin-block: 10px;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* company links */
+/* important links */
+.top-footer__company__links li,
+.top-footer__links li {
+  margin: 18px 10px;
+}
+.top-footer__company__links a,
+.top-footer__links a {
+  color: var(--footer-text-color);
+  transition: 0.3s ease-in-out;
+}
+
+.top-footer__company__links a:hover,
+.top-footer__links a:hover {
+  color: #ffffff80;
+  transform: translateX(4px);
+}
+.top-footer .link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+/* newsletter div css */
+
+.email {
+  background-color: var(--footer-email-bg-color);
+  margin-block: 20px;
+  display: flex;
+}
+.email input {
+  border: none;
+  padding: 1rem;
+  outline: none;
+  background-color: inherit;
+  color: var(--text-color);
+}
+.email input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.email button {
+  margin: 4px 4px 4px auto;
+  border: 1px solid var(--footer-email-border-color);
+}
+.social-media-links li {
+  margin-right: 10px;
+}
+.social-media-links .social-media-icon {
+  color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid white;
+}
+.social-media-links li {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}

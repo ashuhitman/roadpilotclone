@@ -1,0 +1,5 @@
+.testimonial-area {
+  background-color: var(--section-bg-color);
+  display: flex;
+  justify-content: center;
+}
